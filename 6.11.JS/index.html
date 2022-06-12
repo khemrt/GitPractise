@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 2px solid black">
+        User Name : <input type="text" name="username" id="username" placeholder="Enter User Name"> <br>
+        Email : <input type="email" name="email" id="email" placeholder="Enter your Email" > <br>
+        Password : <input type="password" name="password" id="password" placeholder="Enter your password"> <br>
+        <button onclick="show()">Register</button>
+        <p id="uname"></p>
+       <p id="em"></p>
+       <p id="pwd"></p> 
+    </div>
+    <script>
+        function show(){
+            var name = document.getElementById('username').value
+            var email=document.getElementById('email').value
+            var password=document.getElementById('password').value
+            document.getElementById('uname').innerHTML = 'Your Name is :' + name
+            document.getElementById('em').innerHTML = 'Your Email is :' + email
+            document.getElementById('pwd').innerHTML = 'Your Password is :' + password 
+        }
+    </script>
+</body>
+</html>
